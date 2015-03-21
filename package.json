@@ -1,9 +1,9 @@
 {
-  "name": "eight-tips",
+  "name": "6-tips-for-meaningful-motion",
   "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git@github.com:markgeyer/6-tips-for-meaningful-motion.git"
   },
   "devDependencies": {
     "angular": "^1.3.15",

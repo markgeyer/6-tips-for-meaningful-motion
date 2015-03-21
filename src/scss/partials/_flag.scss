@@ -1,0 +1,62 @@
+.flag {
+  display: table;
+  width: 100%;
+
+  &--image,
+  &--body {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  &--image {
+
+    > img {
+      display: block;
+      max-width: none;
+    }
+
+    > svg {
+      display: block;
+      max-width: none;
+    }
+
+    > span {
+      display: block;
+      max-width: none;
+    }
+
+    > time {
+      display: block;
+      max-width: none;
+      white-space: nowrap;
+    }
+  }
+
+  &--body {
+    width: 100%;
+  }
+
+  &--top {
+
+    &--image,
+    &--body {
+      vertical-align: top;
+    }
+  }
+
+  &--bottom {
+
+    &--image,
+    &--body {
+      vertical-align: bottom;
+    }
+  }
+
+  &--rev {
+
+    &--image {
+      padding-right: 0;
+      padding-left: 10px;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.grid {
+  position: relative;
+  display: block;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  letter-spacing: -0.31em;
+  text-rendering: optimizespeed;
+  word-spacing: -0.43em;
+
+  &--center {
+    text-align: center;
+  }
+
+  &-cell {
+    width: 100%;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    text-align: left;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-rendering: auto;
+
+    &--center {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}

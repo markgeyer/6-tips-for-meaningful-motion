@@ -49,34 +49,456 @@
   <div class="reveal">
     <div class="slides">
 
-
-      <!-- section 1 -->
+      <!-- title screen -->
       <section>
+        <div class="title-symbol">
+          <h2>6 Tips for</h2>
+          <h1>Meaningful<br> Animation</h1>
+          <svg class="title" width="503px" height="503px" viewBox="0 0 503 503" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="Group" transform="translate(-76.000000, -64.000000)">
+              <path class="yellow" d="M546.09174,192.696034 C504.026386,117.846125 424.543539,66.8448451 333.000009,65.0490038 L333,115.06128 C406.035424,116.853358 469.359483,157.7982 502.779017,217.702646 L546.09174,192.696034 Z"></path>
+              <path class="orange" d="M640.978661,377.11104 C598.913307,302.261132 519.43046,251.259852 427.88693,249.464011 L427.886921,299.476286 C500.922345,301.268365 564.246404,342.213207 597.665938,402.117653 L640.978661,377.11104 Z" transform="translate(534.432791, 325.790832) rotate(-300.000000) translate(-534.432791, -325.790832) "></path>
+              <path class="red" d="M528.714041,551.493028 C486.648687,476.643119 407.16584,425.641839 315.62231,423.845998 L315.622301,473.858274 C388.657725,475.650352 451.981784,516.595195 485.401317,576.49964 L528.714041,551.493028 Z" transform="translate(422.168171, 500.172819) rotate(-240.000000) translate(-422.168171, -500.172819) "></path>
+              <path class="purple" d="M321.5625,541.460008 C279.497146,466.6101 200.014299,415.60882 108.470769,413.812979 L108.47076,463.825254 C181.506184,465.617333 244.830243,506.562175 278.249776,566.466621 L321.5625,541.460008 Z" transform="translate(215.016630, 490.139800) rotate(-180.000000) translate(-215.016630, -490.139800) "></path>
+              <path class="blue" d="M226.675579,357.045002 C184.610225,282.195093 105.127378,231.193813 13.5838478,229.397972 L13.5838387,279.410248 C86.6192628,281.202326 149.943322,322.147169 183.362855,382.051614 L226.675579,357.045002 Z" transform="translate(120.129709, 305.724793) rotate(-120.000000) translate(-120.129709, -305.724793) "></path>
+              <path class="green" d="M338.940199,182.663014 C296.874845,107.813106 217.391998,56.8118258 125.848468,55.0159846 L125.848459,105.02826 C198.883883,106.820339 262.207942,147.765181 295.627475,207.669627 L338.940199,182.663014 Z" transform="translate(232.394329, 131.342806) rotate(-60.000000) translate(-232.394329, -131.342806) "></path>
+            </g>
+          </svg>
+        </div>
+        <p>By Mark Geyer</p>
+      </section>    
+
+
+
+
+      <!-- pres controls -->
+      <section>
+        <h3>pres controls</h3>
+        <dt>esc key<dd>Shows all slides. Use the arrow keys,<br> nav to any slide, and hit return.</dd></dt><br>
+        <dt>Arrow keys<dd>Navigate through the presentation.</dd></dt>
+      </section>
+
+
+
+
+      <!-- preface -->
+      <section>
+        <h3>preface</h3>
+        <p>This pres is for everyone!</p>
+        <p class="fragment">No code required ;)</p>
+        <p class="fragment">Hopefully this will help you to know<br> <em>when</em> and <em>where</em> to apply motion.</p>
+      </section>
+
+
+
+
+
+      <!-- tip #1 -->
+      <section class="yellow-bgd">
 
         <section>
-          <h4>Slide 1</h4>
-          <h1>title</h1>
+          <h4>tip #1</h4>
+          <h1>state</h1>
         </section>
 
         <section>
-          <h2>title</h2>
-          <p>{{stuff}}</p>
+          <img src="" alt="">
+          <h3>state</h3>
+          <p>Any interface element that's interactive<br> should have a least <b>two</b> states.</p>
+        </section>
+
+        <section>
+          <p><b>Showing state is a must!</b></p>
+          <p>It's feedback to the user to show that your<br> <em>thing</em> is responding to <em>their</em> actions.</p>
+        </section>
+
+        <section>
+          <p><b>Newton's third law of motion</b></p>
+          <p>For every action, there is an<br> equal and opposite reaction.</p>
+        </section>
+
+        <section>
+          <p>A lot of interface elements are boolean (true or false):</p>
+          <div class="grid">
+            <div class="grid-cell size-1of2 tc">
+              <p>Buttons</p>
+              <p>Checkboxes</p>
+              <p>Radios</p>
+              <p>Text inputs</p>
+            </div>
+            <div class="grid-cell size-1of2 tc">
+              <p>Alerts</p>
+              <p>Modals</p>
+              <p>Overlays</p>
+              <p>Etc.</p>
+            </div>
+          </div>
+          <p class="fragment">Motion can bridge the states of these elements.</p>
+        </section>
+
+        <section>
+          <p>At a higher tier, <b>state</b> can also refer to<br> where a user is at within a particular flow.</p>
+          <p class="fragment">E.g. creating an account, onboarding, navigation,<br> creation of something using a wizard, etc.</p>
         </section>
 
       </section>
 
 
-      <!-- section 2 -->
-      <section>
+
+
+
+
+
+
+      <!-- tip #2 -->
+      <section class="orange-bgd">
 
         <section>
-          <h4>Slide 2</h4>
-          <h1>title</h1>
+          <h4>tip #2</h4>
+          <h1>scale</h1>
         </section>
 
         <section>
-          <h2>title</h2>
-          <p>Content</p>
+          <h3>scale</h3>
+          <p>When you make products,<br> motion should have a consistent flow.</p>
+        </section>
+
+        <section>
+          <p>With motion, what can <b>scale</b>?</p>
+          <ul>
+            <li>Time (Duration and delay)
+            <li>Specific movements (cubic-bezier's)</li>
+            <li>Transforms (translate, scale, rotate, skew, etc.)</li>
+          </ul>
+          <p class="fragment">The sooner scales are in place the more you'll use them, which will define your motion patterns.</p>
+        </section>
+
+        <section>
+          <p>Example of a <b>time</b> scale...</p>
+          <ul>
+            <li class="fragment">.1s = delay (fast), dropdown menus, </li>
+            <li class="fragment">.2s = delay (normal), button states, link states...</li>
+            <li class="fragment">.4s = delay (slow), modals, alerts, overlay fades...</li>
+            <li class="fragment">.8s = etc.</li>
+          </ul>
+        </section>
+
+        <section>
+          <p>Example of a <b>bezier curve</b> scale...</p>
+          <div class="grid">
+            <div class="grid-cell size-1of4 tc fragment">
+              <img src="img/function-linear.png" alt="" width="200">
+              <p><small>Linear</small></p>
+            </div>
+            <div class="grid-cell size-1of4 tc fragment">
+              <img src="img/function-1.png" alt="" width="200">
+              <p><small>Follow through 1</small></p>
+            </div>
+            <div class="grid-cell size-1of4 tc fragment">
+              <img src="img/function-2.png" alt="" width="200">
+              <p><small>Follow through 2</small></p>
+            </div>
+            <div class="grid-cell size-1of4 tc fragment">
+              <img src="img/function-3.png" alt="" width="200">
+              <p><small>Follow through 3</small></p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <p>Simple scales for each <b>transform</b> would help too!</p>
+          <div class="grid">
+            <div class="grid-cell size-1of5 tc fragment">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+                <path fill-rule="evenodd" clip-rule="evenodd" fill="#000" d="M90 50L79.6 60.533V54H54v25.6h6.533L50 90L39.467 79.6H46V54H20.4 v6.533L10 50l10.4-10.533V46H46V20.4h-6.533L50 10l10.533 10.4H54V46h25.6v-6.533L90 50z"></path>
+              </svg>
+              <p><small>Translate</small></p>
+            </div>
+            <div class="grid-cell size-1of5 tc fragment">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+              <g>
+                <g>
+                  <polygon fill="rgba(0,0,0,.5)" points="33.5,23.6 33.5,18.7 12.7,60.1"></polygon>
+                  <polygon fill="rgba(0,0,0,.25)" points="33.5,31.4 33.5,27.6 17.3,55.9"></polygon>
+                  <polygon fill="rgba(0,0,0,.5)" points="39.7,87.3 81.2,66.5 76.3,66.5"></polygon>
+                  <polygon fill="rgba(0,0,0,.25)" points="44,82.7 72.3,66.5 68.4,66.5"></polygon>
+                  <path fill="#000" d="M83.333 10H42.8c-3.682 0-6.667 2.985-6.667 6.667V57.2c0 3.7 3 6.7 6.7 6.667h40.534 c3.682 0 6.667-2.985 6.667-6.667V16.667C90 13 87 10 83.3 10z M86.2 54.093c0 3.3-2.675 5.974-5.974 5.974H45.906 c-3.299 0-5.973-2.674-5.973-5.974v-34.32c0-3.299 2.674-5.974 5.973-5.974h34.321c3.299 0 6 2.7 6 5.974V54.093z"></path>
+                </g>
+                <path fill="rgba(0,0,0,.5)" d="M30.533 62.8H16.667C12.985 62.8 10 65.8 10 69.467v13.867C10 87 13 90 16.7 90h13.867 c3.682 0 6.667-2.984 6.667-6.667V69.467C37.2 65.8 34.2 62.8 30.5 62.8z M34 81.768c0 2.779-2.253 5.032-5.033 5.032H18.5 c-2.78 0-5.033-2.253-5.033-5.032V71.299c0-2.779 2.253-5.033 5.033-5.033h10.468c2.78 0 5 2.3 5 5.033L34 81.8 L34 81.768z"></path>
+              </g>
+              </svg>
+              <p><small>Scale</small></p>
+            </div>
+            <div class="grid-cell size-1of5 tc fragment">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+                <path fill-rule="evenodd" clip-rule="evenodd" fill="#000" d="M59.83 58.592l2.221-2.646c0 0-1.592-1.613-2.32-2.379 c10.858-1.159 18.608-4.201 18.608-7.771c0-4.568-12.688-8.271-28.339-8.271s-28.339 3.703-28.339 8.3 c0 4.3 11.3 7.9 25.8 8.237v-5.525l10.576 8l-10.576 8v-5.584C26.533 58.5 10 53.4 10 47.2 c0-6.478 17.909-11.729 40-11.729s40 5.3 40 11.729C90 52.7 77.2 57.3 59.8 58.592z"></path>
+              </svg>
+              <p><small>Rotate</small></p>
+            </div>
+            <div class="grid-cell size-1of5 tc fragment">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+                <path fill-rule="evenodd" clip-rule="evenodd" fill="#000" d="M84.412 54.412H73.59c-1.751 9.689-9.362 17.339-19.031 19.1 v10.704c0 0 0.1 5.588-4.412 5.588s-4.412-5.588-4.412-5.588V73.561c-9.668-1.811-17.28-9.46-19.031-19.149H15.588 c0 0-5.588 0.112-5.588-4.412s5.588-4.412 5.588-4.412h11.172c1.832-9.452 9.25-16.91 18.681-18.799V15.735 c0 0-0.112-5.588 4.412-5.588s4.412 5.6 4.4 5.588v10.944c9.709 1.7 17.4 9.3 19.3 18.909h10.878 c0 0 5.588-0.112 5.6 4.412S84.412 54.4 84.4 54.412z M50.221 34.118c-8.894 0-16.103 7.209-16.103 16.1 c0 8.9 7.2 16.1 16.1 16.103s16.103-7.21 16.103-16.103C66.324 41.3 59.1 34.1 50.2 34.118z M50.147 59.6 c-5.198 0-9.412-4.213-9.412-9.412c0-5.198 4.214-9.412 9.412-9.412c5.198 0 9.4 4.2 9.4 9.4 C59.559 55.3 55.3 59.6 50.1 59.559z"></path>
+              </svg>
+              <p><small>Origin</small></p>
+            </div>
+            <div class="grid-cell size-1of5 tc fragment">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+                <g>
+                  <path fill-rule="evenodd" clip-rule="evenodd" fill="#000" d="M17.764 10h12.293c3.994 0 7.2 3.2 7.2 7.231v12.293 c0 3.994-3.238 7.231-7.231 7.231H17.764c-3.994 0-7.231-3.237-7.231-7.231V17.231C10.532 13.2 13.8 10 17.8 10z"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd" fill="rgba(0,0,0,.8)" d="M43.102 50.066H30.809c-3.994 0-7.231-3.237-7.231-7.231v-4.749 h7.811c3.994 0 7.231-3.237 7.231-7.231v-7.544h4.482c3.994 0 7.2 3.2 7.2 7.231v12.293 C50.333 46.8 47.1 50.1 43.1 50.066z"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd" fill="rgba(0,0,0,.6)" d="M56.146 63.378H43.854c-3.994 0-7.231-3.238-7.231-7.231v-4.749 h7.811c3.994 0 7.231-3.237 7.231-7.231v-7.544h4.482c3.994 0 7.2 3.2 7.2 7.231v12.293 C63.378 60.1 60.1 63.4 56.1 63.378z"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd" fill="rgba(0,0,0,.4)" d="M69.191 76.689H56.898c-3.994 0-7.231-3.238-7.231-7.231v-4.749 h7.811c3.994 0 7.231-3.238 7.231-7.231v-7.544h4.482c3.994 0 7.2 3.2 7.2 7.231v12.293 C76.423 73.5 73.2 76.7 69.2 76.689z"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd" fill="rgba(0,0,0,.2)" d="M82.236 90H69.943c-3.994 0-7.231-3.237-7.231-7.231V78.02h7.811 c3.994 0 7.231-3.238 7.231-7.231v-7.544h4.482c3.994 0 7.2 3.2 7.2 7.231v12.293C89.468 86.8 86.2 90 82.2 90z"></path>
+                </g>
+              </svg>
+              <p><small>Opacity</small></p>
+            </div>
+          </div>
+        </section>
+
+      </section>
+
+
+
+
+
+
+
+
+
+      <!-- tip #3 -->
+      <section class="red-bgd">
+
+        <section>
+          <h4>tip #3</h4>
+          <h1>personality</h1>
+        </section>
+
+        <section>
+          <h3>personality</h3>
+          <p>The voice, visuals, and motion of your product.</p>
+        </section>
+
+        <section>
+          <p>The amount of <b>polish</b> that should go into a product, should be very high.</p>
+          <p class="fragment">But, first it needs to work... <span class="fragment">and this<br> is typically where teams get stuck.</span></p>
+        </section>
+
+        <section data-background="img/stuck.gif"></section>
+
+        <section>
+          <p>Experiment with motion in the design process,<br> but only after you know what you're building!</p>
+        </section>
+
+        <section class="grid tc">
+          <div class="grid-cell tc">Quick examples of movement</div>
+          <div class="grid-cell size-1of2 fragment tc"><br>
+            <div class="example-box ease-ani"></div>
+            <p> <small>Smooth (ease)</small></p>
+          </div>
+          <div class="grid-cell size-1of2 fragment tc"><br>
+            <div class="example-box followthrough-ani"></div>
+            <p> <small>Follow through</small></p>
+          </div>
+          <div class="grid-cell size-1of2 fragment tc"><br>
+            <div class="example-box bouncy-ani"></div>
+            <p> <small>Bouncy</small></p>
+          </div>
+          <div class="grid-cell size-1of2 fragment tc"><br>
+            <div class="example-box anticipation-ani"></div>
+            <p> <small>Anticipation</small></p>
+          </div>
+        </section>
+
+      </section>
+
+
+
+
+
+
+
+
+
+      <!-- tip #4 -->
+      <section class="purple-bgd">
+
+        <section>
+          <h4>tip #4</h4>
+          <h1>overboard</h1>
+        </section>
+
+        <section>
+          <img src="" alt="">
+          <h3>overboard</h3>
+          <p>Going too far with it.</p>
+        </section>
+
+        <section>
+          <div class="hey-guy tc" ng-class="{'hey-guy-ani': isOverboard}">
+            <img src="img/hey-guy.png" alt="">
+          </div>
+          <div class="crazy-guy tc" ng-class="{'crazy-guy-ani': isOverboard}">
+            <img src="img/crazy-guy.png" alt="">
+          </div>
+          <div class="crazy-crowd tc" ng-class="{'crazy-crowd-ani': isOverboard}">
+            <img src="img/crazy-crowd.png" alt="">
+          </div>
+          <p ng-class="{'fade-out-ani': isOverboard}">Say you have a button...</p><br>
+          <a href class="example-btn" ng-class="{'crazy-ani': isOverboard}" ng-click="goOverboard()">button</a>
+          <p ng-class="{'fade-out-ani': isOverboard}"><br><small>^ press it</small></p>
+        </section>
+
+        <section>
+          <p>It's <strong>easy</strong> to do when it comes to motion.</p>
+          <p class="fragment">The more motion, the better... right? Nope.</p>
+        </section>
+
+        <section>
+          <p>Even if various transitions are amazing...<br> if there's too much of it going on with<br> EVERY interaction... it can cause nausea.</p>
+        </section>
+
+        <section>
+          <p>A little motion goes a long way</p>
+          <img src="img/overboard-chart.png" alt="">
+        </section>
+
+        <section data-background-video="img/lawnmower.mp4,img/lawnmower.webm">
+          <p class="purple-text">So remember... don't do this.</p>
+        </section>
+
+      </section>
+
+
+
+
+
+
+
+
+
+      <!-- tip #5 -->
+      <section class="blue-bgd">
+
+        <section>
+          <h4>tip #5</h4>
+          <h1>emotion</h1>
+        </section>
+
+        <section>
+          <h3>emotion</h3>
+          <p>The mental state of your user<br> while using your interface.</p>
+        </section>
+
+        <section>
+          <p>For example, <b>when making a movie</b>,<br> everything is planned.</p>
+          <p class="fragment">Millions are spent on writing scripts,<br> planning storyboards, hiring actors, etc.</p>
+          <p class="fragment">Characters of a story are meant to<br> shape your emotions towards them.</p>
+        </section>
+
+        <section>
+          <p><b>When building product</b>,<br> everything is planned.</p>
+          <p class="fragment">Millions are spent on research, road maps,<br> planning screens, development, wizard parties, etc.</p>
+          <p class="fragment">With the element of interaction, we have<br> to provoke AND support user emotions.</p>
+        </section>
+
+        <section data-background="img/ahhhh.gif"></section>
+
+        <section class="grid">
+          <div class="grid-cell size-1of2 a-top tc positive-column">
+            <h4>Positives</h4>
+            <hr>
+            <p>Onboarding</p>
+            <p>Confirmations</p>
+            <p>A beautiful interface</p>
+          </div>
+          <div class="grid-cell size-1of2 a-top tc">
+            <h4>Negatives</h4>
+            <hr>
+            <p>Stuff is broken</p>
+            <p>Super slow</p>
+            <p>Bad UX</p>
+          </div>
+          <div class="grid-cell tc fragment">
+            <p>Motion, along with great UX design,<br> can help support the feels!</p>
+          </div>
+        </section>
+
+        <section data-background="img/at-hug.gif"></section>
+
+      </section>
+
+
+
+
+
+
+
+
+
+      <!-- tip #6 -->
+      <section class="green-bgd">
+
+        <section>
+          <h4>tip #6</h4>
+          <h1>continuous</h1>
+        </section>
+
+        <section>
+          <h3>continuous</h3>
+          <p>Don't stop evolving and educating your<br> team about your motion system.</p>
+        </section>
+
+        <section>
+          <p>When motion concepts go viral...<br> take note of it and incorporate what works,<br> evolving your motion system.</p>
+        </section>
+
+        <section data-background="img/acme-catalog.jpg"></section>
+
+        <section>
+          <p>With animation libraries, everything you come<br> across <em>might</em> work for your product as is.</p>
+          <p class="fragment">To be unique, it's best if you<br> create a motion system yourself :)</p>
+        </section>
+
+        <section data-background="img/piece-out.gif"></section>
+
+        <section>
+          <p><b>Take a step back!</b></p>
+          <p class="fragment">Sometimes, in order to know what to do next...<br> you need to get away from it first.</p>
+          <p class="fragment">Looking at designs you made the previous day<br> makes you see things that you didn't see before.</p>
+        </section>
+
+      </section>
+
+
+
+
+
+
+
+
+      <!-- ending -->
+      <section>
+
+        <section>
+          <p>Almost done...</p>
+        </section>
+
+        <section class="flag">
+          <div class="flag--image">
+            <img src="img/da-vinci_selfie.jpg" alt="" width="400">
+          </div>
+          <div class="flag--body a-mid plxl tl">
+            <p><b>Leonardo da Vinci</b></p>
+            <p>The outline for this talk was based around his process of creating a painting.</p>
+            <p class="fragment"><small><b>Plus!</b> He looks like a wizard, ha!</small></p>
+          </div>
+        </section>
+
+        <section>
+          <h1>Thanks!</h1>
+          <p>This presentation:</p>
+          <a href="http://markgeyer.github.io/6-tips-for-meaningful-motion" title="6 Tips for Meaningful Motion">markgeyer.github.io/6-tips-for-meaningful-motion</a>
         </section>
 
       </section>

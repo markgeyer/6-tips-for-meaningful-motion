@@ -9,6 +9,7 @@ body {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   -webkit-overflow-scrolling: touch;
   -webkit-font-smoothing: auto;
+  background-color: #f1f2f3;
 }
 
 
@@ -19,7 +20,17 @@ section.has-light-background h3,
 section.has-light-background h4,
 section.has-light-background h5,
 section.has-light-background h6 {
-  color: #222; }
+  color: black; }
+
+
+section.has-dark-background,
+section.has-dark-background h1,
+section.has-dark-background h2,
+section.has-dark-background h3, 
+section.has-dark-background h4,
+section.has-dark-background h5,
+section.has-dark-background h6 {
+  color: white; }
 
 
 
@@ -43,8 +54,6 @@ section.has-light-background h6 {
  *********************************************/
 .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
   margin: 0 0 20px 0;
-  font-family: 'Salesforce Sans Thin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: normal;
   line-height: 1.2;
   letter-spacing: normal;
   text-transform: uppercase;
@@ -116,12 +125,8 @@ section.has-light-background h6 {
 .reveal blockquote {
   display: block;
   position: relative;
-  width: 70%;
-  margin: 20px auto;
-  padding: 5px;
-  font-style: italic;
-  background: rgba(255, 255, 255, 0.05);
-  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2); }
+  width: 80%;
+  margin: 20px auto; }
 
 .reveal blockquote p:first-child, .reveal blockquote p:last-child {
   display: inline-block; }
@@ -209,10 +214,7 @@ section.has-light-background h6 {
  * IMAGES
  *********************************************/
 .reveal section img {
-  margin: 15px 0px;
-  background: rgba(255, 255, 255, 0.12);
-  border: 4px solid #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
+  margin: 15px 0px; }
 
 .reveal a img {
   transition: all .15s linear; }
@@ -268,6 +270,6 @@ section.has-light-background h6 {
 /*********************************************
  * SLIDE NUMBER
  *********************************************/
+
 .reveal .slide-number {
   color: #42affa; }
-

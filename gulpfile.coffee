@@ -22,8 +22,8 @@ gulp.task 'clean', (cb) ->
   del paths.output, cb
 
 
-gulp.task 'deploy', ->
-  gulp.src(paths.output)
+gulp.task 'deploy', ['default'], ->
+  gulp.src(paths.output + "/**/*")
     .pipe ghPages()
 
 

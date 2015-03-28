@@ -340,7 +340,7 @@ angular.module('app', ['ngRoute', 'ngAnimate', 'ngTouch'])
         $scope.isOverboard = false;
         console.log('ended');
       });
-    }, 35000);
+    }, 34000);
   };
 
 
